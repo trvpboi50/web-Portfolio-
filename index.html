@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kasolo | Denis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img src="" alt="" />
+    <header>
+      <div class="container">
+        <nav>
+          <img src="edited.png" alt="my image" class="round-pic" />
+          <span>Kasolo Denis</span>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="headtext">
+          <p>Web developer</p>
+          <h1>
+            I'am <span>Kasolo Denis</span> <br />
+            from Uganda
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!----about me section in main-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img width="400px" src="images/IMG_20250410_181759.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+              autem placeat, ea maxime facere ipsam aliquam illo quam hic
+              eligendi expedita? Amet maxime, sunt impedit unde vitae facilis
+              corporis voluptatum!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development<br />Designing Web/App Interfaces</span>
+                </li>
+                <li>
+                  <span
+                    >Java development<br />java both mobile & desktop
+                    development</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Web Development<br />Designing Web/App Interfaces</span>
+                </li>
+                <li>
+                  <span
+                    >Java development<br />java both mobile & desktop
+                    development</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>Web Development<br />Designing Web/App Interfaces</span>
+                </li>
+                <li>
+                  <span
+                    >Java development<br />java both mobile & desktop
+                    development</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.ClassList.remove("active-link");
+          
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.ClassList.remove("active-link");
+        }
+        event.currentTarget.ClassList.add("active-link");
+      }
+    </script>
+  </body>
+</html>
